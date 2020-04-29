@@ -3,7 +3,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = "Barış";
+const name = "Barış Türe";
+const homepage = "Back to home";
 export const siteTitle = 'NextBlog'
 
 
@@ -37,18 +38,9 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={utilStyles.backToHome}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a >{homepage}</a>
               </Link>
             </h2>
           </>
