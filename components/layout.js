@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const name = "Barış Türe";
 const homepage = "Back to home";
-export const siteTitle = 'NextBlog'
+export const siteTitle ="💻 Hello World!"
 
 
 export default function Layout({ children, home }) {
