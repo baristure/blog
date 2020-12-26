@@ -12,10 +12,11 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p><strong>Hi I'm Barış.</strong> A passionate full stack web developer </p>
+        <h3 className={utilStyles.introdcution}>  <strong>Welcome to my writing place  🤓 </strong></h3>
+        <p> I am someone who has adopted the principle of self-renewal and continuous improvement. I like to learn new things and also I like to share my knowledge as I can ✌️ </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Articles</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
